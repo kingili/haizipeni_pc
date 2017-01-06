@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+$fontFamily:'Noto Sans TC', 'Microsoft JhengHei', 'LiHei Pro', 'WenQuanYi Zen Hei', Helvetica, Arial, sans-serif;
+$fontFamilyEn:Arial, sans-serif;
+$colorFont:#333333; //黑色-預設文字
+$colorBr1:#b58f6b; //主色-淺咖啡
+$colorBr2:#70502d; //深咖啡
+$colorBr3:#f1eee9; //淺咖啡-背景用
+$colorR1:#e36c68; //副主色-紅色
+$colorR2:#d0534e; //深紅色
+$colorR3:red; //紅色-價格用
+$colorGy1:#dddddd; //淺灰色-邊框線
+$colorGy2:#f5f5f5; //淺淺灰-背景用
+$colorGy3:#999; //淺淺灰-文字用
+$colorW:#ffffff; //白色
+$colorY:#fff45c; //黃色-購物車
+
+
+
+//@include afterClear();
+@mixin afterClear() {
+	&:after{
+		content: ' ';
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
+
+
+//@include border-radius(25px);
+//@include box-sizing(border-box);
+//@include box-shadow($color5 3px 3px 5px);
+//@include text-shadow($color5 3px 3px 5px);
+//@include opacity(0.1);

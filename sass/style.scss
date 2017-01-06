@@ -1,0 +1,14 @@
+/* 
+for haizipeni
+create 2016/12/29
+author insowe Gili
+*/
+@charset "UTF-8";
+@import "compass/css3";
+@import "setting";
+@import "base";
+@import "pc";
+
+
+@include ViewBase();
+@include ViewPc();

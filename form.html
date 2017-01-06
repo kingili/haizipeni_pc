@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scaleble=no">
+    <title>台灣原創設計的品牌童裝 - Haizipeni 孩子陪你</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.ddslick.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.js"></script>
+    <![endif]-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.ddslick.js"></script>
+    <script src="js/imgLiquid.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+  		<div id="form" class="container">
+		<section class="section">
+			<h2>基本表單</h2>
+			<!--radio-->
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon" id="infoName">姓名：</div>
+					<div class="form-control">
+						<input type="text" aria-describedby="infoName" value="金小桔">
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="input-group-addon" id="infoPhone">聯絡電話：</div>
+					<div class="form-control">
+						<input type="text" aria-describedby="infoPhone" value="096XOOOXXX">
+					</div>
+				</div>
+			</div>
+
+			<!--checkbox-->
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon" id="">多選：</div>
+					<div class="form-control">
+					  	<label>
+						  <input type="checkbox" name="checkbox1" checked> checkbox1
+						</label>
+						<label>
+						  <input type="checkbox" name="checkbox1"> checkbox2
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!--checkbox-->
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon" id="">單選：</div>
+					<div class="form-control">
+					  	<label>
+						  <input type="radio" name="radio1" checked> radio1
+						</label>
+						<label>
+						  <input type="radio" name="radio1"> radio2
+						</label>
+					</div>
+				</div>
+			</div>
+			<!--textarea-->
+			<div class="form-group">
+				<div class="input-group">
+					<textarea></textarea>
+				</div>
+			</div>
+			<br><br>
+			<h2>加icon的欄位</h2>
+			<div class="input-group icon">
+				<div class="input-group-addon" id="infoCode"><i class="fa fa-lock"></i></div>
+				<input type="text" aria-describedby="infoCode" value="" placeholder="驗證碼">
+			</div>
+			<br><br>
+			<h4>按鈕樣式</h4>
+			<!--button-->
+			<div class="btn-block">
+				<button type="button" class="btn btn-default">送出</button>
+				<button type="button" class="btn btn-info">送出</button>
+				<button type="button" class="btn btn-primary">送出</button>
+				<button type="button" class="btn btn-outline-gy">送出</button>
+				<button type="button" class="btn btn-outline-w">送出</button>
+			</div>
+			<br><br>
+			<h2>呼叫loading動畫</h2>
+				顯示loading: <br>
+                loading();<br><br>
+                <button type="button" class="btn btn-default" onclick="loading();">呼叫貓貓</button><br><br>
+                關閉loading: <br>
+			    loadingClose();
+			    
+				<!-- loading 彈窗 -->
+			    <div id="loadingBox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			    	<div class="modal-dialog pupop-wrap">
+			    		<div class="pupop">
+							<img src="images/loading.gif" alt="">
+			    		</div>
+			    	</div>
+			    </div>
+			<br><br>
+			<h2>彈窗</h2>
+				顯示彈窗(js控制): <br>
+                $('#pupopWindow').modal('show');<br><br>
+				顯示彈窗(連結控制): <br>
+                <p>&lt;a href="javascript:;" class="popup" data-toggle="modal" data-target="#pupopWindow"&gt;</p><br>
+			    <a href="javascript:;" class="popup btn btn-default" data-toggle="modal" data-target="#pupopWindow">彈窗</a><br><br>
+                關閉彈窗: <br>
+			    $('#pupopWindow').modal('hide');<br><br>
+
+				<!-- 彈窗寫法如下-->
+			    <div id="pupopWindow" class="modal fade pupopWindow" tabindex="-1" role="dialog" aria-hidden="true">
+			    	<div class="modal-dialog pupop-wrap">
+			    		<div class="pupop">
+			    			<!-- 顯示內容-->
+							<h3 class="text-center">彈窗</h3>
+							<div class="pupop-block">
+								<p>123123212311213213213</p>
+							</div>
+							<div class="btn-block text-center">
+								<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">確認</button>
+							</div>
+			    			<!-- 顯示內容 end-->
+			    		</div>
+			    	</div>
+			    </div>
+			<br><br>
+			<h2>商品</h2>
+			<div class="pro-wrap">
+				<div class="item">
+					<div class="pro-item">
+						<a href="proitem.html">
+							<span class="tag-brand"><img src="images/brand/brand_KKStory1.png" alt=""></span>
+							<span class="pro-img"><img src="images/pic/pic01.jpg" class="lazyOwl" alt=""></span>
+						</a>
+						<div class="pro-text">
+							<div class="pro-name">方格子鋪棉外套-紅白色</div>
+							<div class="pro-price"><del>NT. 1580</del><span class="red">NT. 1498</span></div>
+						</div>
+						<div class="pro-select input-group">
+							<div class="input-group-addon" id="proSelect">選擇</div>
+							<div class="form-control">
+								<div class="dropdown" aria-describedby="proSelect"></div>
+							</div>
+						</div>
+						<div class="pro-amount input-group">
+							<div class="input-group-addon" id="proAmount">數量</div>
+							<div class="control form-control" aria-describedby="proAmount">
+								<button class="btn btn-minus" type="button"><i class="fa fa-minus"></i></button>
+								<input type="number" value="1">
+								<button class="btn btn-plus" type="button"><i class="fa fa-plus"></i></button>
+							</div>
+						</div>
+						<div class="btn-block text-center">
+							<button type="button" class="btn btn-default" onclick="loading();">加入購物車</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script>
+		$(function(){
+			// 下拉選單的資料來源
+			var ddData = [
+				{
+					text: '粉 - 90',
+					value: 1,
+					imageSrc: 'images/pic/select01.jpg'
+				},
+				{
+					text: '粉 - 100',
+					value: 2,
+					imageSrc: 'images/pic/select01.jpg'
+				},
+				{
+					text: '粉 - 110',
+					value: 3,
+					imageSrc: 'images/pic/select01.jpg'
+				},
+				{
+					text: '灰 - 90',
+					value: 4,
+					imageSrc: 'images/pic/select02.jpg'
+				},
+				{
+					text: '灰 - 100',
+					value: 5,
+					imageSrc: 'images/pic/select02.jpg'
+				},
+				{
+					text: '灰 - 110',
+					value: 6,
+					imageSrc: 'images/pic/select02.jpg'
+				}
+			];
+	 
+			// 轉換成 ddslick 下拉選單
+			$('.dropdown').ddslick({
+				data: ddData
+			});
+		});
+	</script>
+	
+  </body>
+</html>

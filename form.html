@@ -19,6 +19,7 @@
     <script src="js/jquery.ddslick.js"></script>
     <script src="js/imgLiquid.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/bootbox.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -93,47 +94,10 @@
 				<button type="button" class="btn btn-outline-w">送出</button>
 			</div>
 			<br><br>
-			<h2>呼叫loading動畫</h2>
-				顯示loading: <br>
-                loading();<br><br>
-                <button type="button" class="btn btn-default" onclick="loading();">呼叫貓貓</button><br><br>
-                關閉loading: <br>
-			    loadingClose();
-			    
-				<!-- loading 彈窗 -->
-			    <div id="loadingBox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-			    	<div class="modal-dialog pupop-wrap">
-			    		<div class="pupop">
-							<img src="images/loading.gif" alt="">
-			    		</div>
-			    	</div>
-			    </div>
-			<br><br>
 			<h2>彈窗</h2>
-				顯示彈窗(js控制): <br>
-                $('#pupopWindow').modal('show');<br><br>
-				顯示彈窗(連結控制): <br>
-                <p>&lt;a href="javascript:;" class="popup" data-toggle="modal" data-target="#pupopWindow"&gt;</p><br>
-			    <a href="javascript:;" class="popup btn btn-default" data-toggle="modal" data-target="#pupopWindow">彈窗</a><br><br>
-                關閉彈窗: <br>
-			    $('#pupopWindow').modal('hide');<br><br>
-
-				<!-- 彈窗寫法如下-->
-			    <div id="pupopWindow" class="modal fade pupopWindow" tabindex="-1" role="dialog" aria-hidden="true">
-			    	<div class="modal-dialog pupop-wrap">
-			    		<div class="pupop">
-			    			<!-- 顯示內容-->
-							<h3 class="text-center">彈窗</h3>
-							<div class="pupop-block">
-								<p>123123212311213213213</p>
-							</div>
-							<div class="btn-block text-center">
-								<button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">確認</button>
-							</div>
-			    			<!-- 顯示內容 end-->
-			    		</div>
-			    	</div>
-			    </div>
+				<button type="button" class="btn btn-default btn-bootbox" bb-key="bb-alert">警告視窗</button>
+				<button type="button" class="btn btn-default btn-bootbox" bb-key="bb-confirms">確認視窗</button>
+				<button type="button" class="btn btn-default btn-bootbox" bb-key="bb-loading">loading視窗</button>
 			<br><br>
 			<h2>商品</h2>
 			<div class="pro-wrap">
@@ -162,7 +126,7 @@
 							</div>
 						</div>
 						<div class="btn-block text-center">
-							<button type="button" class="btn btn-default" onclick="loading();">加入購物車</button>
+							<button type="button" class="btn btn-default btn-bootbox" bb-key="bb-loading">加入購物車</button>
 						</div>
 					</div>
 				</div>

@@ -1,15 +1,4 @@
 
-//顯示loading
-var loading = function(){
-	$('#loadingBox').modal('show');
-
-	//測試關閉用, 請把setTimeout刪除,自訂js
-	setTimeout("loadingClose()",2000);
-}
-//關閉loading
-var loadingClose = function(){
-	$('#loadingBox').modal('hide');
-}
 $(function(){
 	$('.control .btn').on('click', function(){
 		var _amount = parseInt($(this).parents(".control").find("input").val());
@@ -100,7 +89,62 @@ $(function(){
 
 	});
 
-	
+
+	/* 彈窗 */
+	$('.btn-bootbox').on('click', function (e) {
+		e.preventDefault();
+		var key = $(this).attr('bb-key');
+		if (key != "") {
+            switch (key) {
+                case 'bb-alert':
+                    bootbox.alert({
+                        message: "This is an alert with a callback!",
+                        buttons: {
+                            ok: {
+                                label: 'OK',
+                                className: 'btn-default'
+                            }
+                        },
+                        callback: function () {
+                        }
+                    });
+                break;
+                case 'bb-confirms':
+                    bootbox.confirm({
+                		title: "Destroy planet?",
+                        message: "This is a confirm with custom button text and color! Do you like it?",
+                        buttons: {
+                            confirm: {
+                                label: 'Yes',
+                                className: 'btn-default'
+                            },
+                            cancel: {
+                                label: 'No',
+                                className: 'primary'
+                            }
+                        },
+                        callback: function (result) {
+                        	alert(result);
+                        }
+                    });
+                break;
+                case 'bb-loading':
+                    var timeout = 3000; // 3 seconds
+                    var dialog = bootbox.dialog({
+                        message: '<p class="text-center loading-img"><img src="images/loading.gif" alt=""></p>',
+                        closeButton: false,
+                        size: 'small'
+                    });
+
+                    setTimeout(function () {
+                        dialog.modal('hide');
+                    }, timeout);
+
+                break;
+
+            }
+        }
+    });
 });
 
 $(document).ready(function() {

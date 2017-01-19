@@ -569,6 +569,9 @@
 		}
 		.pro-img{
 			display: block;
+			>img{
+				display: none;
+			}
 		}
 		.pro-text{
 			display: block;

@@ -563,12 +563,15 @@ h1.title {
 
 .pro-wrap {
   margin: 30px 0;
+  letter-spacing: -0.31em;
 }
 .pro-wrap .item {
   width: 170px;
   display: inline-block;
   margin: 0 8px 30px;
   vertical-align: top;
+  zoom: 1;
+  letter-spacing: normal;
 }
 
 .pro-style {
@@ -675,6 +678,10 @@ h1.title {
 }
 .pro-item .pro-img {
   display: block;
+  padding: 68% 0;
+}
+.pro-item .pro-img > img {
+  display: none;
 }
 .pro-item .pro-text {
   display: block;

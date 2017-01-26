@@ -1533,3 +1533,53 @@ table.table tbody td {
     padding-left: 0;
   }
 }
+#orderList {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#orderList .logo {
+  padding: 15px 10px;
+  border-bottom: 4px solid #dddddd;
+}
+#orderList .logo img {
+  width: 160px;
+}
+#orderList .input-group-addon {
+  padding-left: 0;
+}
+#orderList .input-group-addon:first-child {
+  padding-right: 0;
+}
+#orderList .member-wrap .cat:before {
+  width: 25px;
+  height: 30px;
+  background-size: 100% auto;
+}
+#orderList .member-wrap .member-box {
+  padding: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #dddddd;
+}
+#orderList table.table {
+  margin-bottom: 10px;
+}
+#orderList ol {
+  margin-left: 15px;
+}
+#orderList ol li {
+  list-style-type: decimal;
+}
+#orderList .info {
+  border: 4px solid #dddddd;
+  padding: 15px 30px 8px;
+  width: 500px;
+  margin: 15px auto;
+}
+#orderList .code {
+  width: 120px;
+  height: 120px;
+  margin: 8px auto;
+}
+#orderList .text {
+  text-indent: 32px;
+}

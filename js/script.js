@@ -135,7 +135,6 @@ $(function(){
                         closeButton: false,
                         size: 'small'
                     });
-
                     setTimeout(function () {
                         dialog.modal('hide');
                     }, timeout);
